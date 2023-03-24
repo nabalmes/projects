@@ -171,6 +171,7 @@ input:focus {
 
 .btn:disabled {
   background-color: #cccccc;
+  color: #625b5b;
   cursor: auto;
 }
 
