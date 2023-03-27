@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import Table from "./components/Table";
 import Search from "./components/Search";
@@ -18,6 +19,15 @@ function App() {
     <div className="App">
       <Search setSearch={setSearch} />
       <Table filteredData={searchBy(Data)} />
+=======
+import Table from './components/Table';
+import './App.css';
+
+function App(search) {
+  return (
+    <div className="App">
+      <Table/>
+>>>>>>> d29b9bcf55f99f28539e92899e24afa41a7d46a6
     </div>
   );
 }
