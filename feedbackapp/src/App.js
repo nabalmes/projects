@@ -8,24 +8,35 @@ import FeedbackData from "./data/feedBackData";
 
 export const App = () => {
   const [feedback, setFeedback] = useState(FeedbackData);
-
+  const [editFeedback, setEditFeedback] = useState({
+    item: {},
+    edit: false
+  })
+  //ADD Feedback
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4()
     setFeedback([newFeedback, ...feedback])
   }
-
+  //Delete feedback
   const deleteFeedback = (id) => {
     if(window.confirm("Are you sure you want to delete?")){
       setFeedback(feedback.filter((item) => item.id !== id))
     }
   }
+
+  const feedbackEdit = (item) => {
+    setEditFeedback({
+      item,
+      edit: true
+    })
+  }
   return (
     <>
       <Header />
       <div className="container">
-        <FeedbackForm handleAdd={addFeedback}/>
+        <FeedbackForm handleAdd={addFeedback} edit={editFeedback} updatedFeedback={setFeedback} currentFeedback={feedback}/>
         <Feedbackstats feedback={feedback} />
-        <FeedbackList feedback={feedback} handleDelete={deleteFeedback}/>
+        <FeedbackList feedback={feedback} handleDelete={deleteFeedback} handleEdit={feedbackEdit} />
       </div>
     </>
   );
