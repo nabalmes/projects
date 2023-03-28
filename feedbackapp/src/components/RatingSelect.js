@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-function RatingSelect({ select }) {
+function RatingSelect({ select, editRating }) {
 
   const [selected, setSelected] = useState(10)
   
@@ -8,6 +8,10 @@ function RatingSelect({ select }) {
     setSelected(+e.currentTarget.value);
     select(+e.currentTarget.value)
   }
+
+  useEffect(() => {
+    setSelected(editRating.item.rating)
+  }, [editRating])
 
   return (
     <ul className="rating">
