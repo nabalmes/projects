@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 function RatingSelect({ select, editRating }) {
 
-  const [selected, setSelected] = useState(10)
+  const [selected, setSelected] = useState()
   
   const handleChange = (e) => {
     setSelected(+e.currentTarget.value);
