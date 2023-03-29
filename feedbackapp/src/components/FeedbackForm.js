@@ -41,10 +41,18 @@ function FeedbackForm({ handleAdd, edit, currentFeedback, updatedFeedback }) {
   };
 
   //Update Feedback
-  const updateFeedBack = (id, updItem) => {
+  const updateFeedBack = async (id, updItem) => {
+    const response = await fetch(`/feedback/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(updItem)
+    })
+    const data = await response.json()
     updatedFeedback(
       currentFeedback.map((item) =>
-        item.id === id ? { ...item, ...updItem } : item
+        item.id === id ? { ...item, ...data } : item
       )
     );
   };
