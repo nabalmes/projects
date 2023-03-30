@@ -18,7 +18,7 @@
                     <Link to='/' className="btn btn-small btn-ghost rounded-btn">
                     Home
                     </Link>
-                    <Link to='/' className="btn btn-small btn-ghost rounded-btn">
+                    <Link to='/about' className="btn btn-small btn-ghost rounded-btn">
                     About
                     </Link>
                 </div>
