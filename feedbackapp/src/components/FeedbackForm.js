@@ -15,7 +15,7 @@ function FeedbackForm({ handleAdd, edit, currentFeedback, updatedFeedback }) {
       setText(null);
     } else if (text !== "" && text.trim().length <= 10) {
       setBtnDisabled(true);
-      setMessage("Putanginaka kulang ang nilagay mo! dapat higit sa sampo!");
+      setMessage("Dagdage ng higit sa sampo!");
     } else {
       setMessage(null);
       setBtnDisabled(false);
