@@ -17,7 +17,9 @@ function UserResults() {
 
     const data = await response.json();
     setUsers(data);
-    setIsLoading(false);
+    setTimeout(() => {
+        setIsLoading(false)
+    }, 5000);
   };
 
   if (!isLoading) {
