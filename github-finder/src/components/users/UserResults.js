@@ -33,6 +33,7 @@ function UserResults() {
   }else {
     return <span className="loader"></span>
   }
+  
 }
 
 export default UserResults;
