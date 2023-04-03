@@ -6,6 +6,7 @@ import "./App.css";
 
 function App() {
   const [search, setSearch] = useState("");
+  // data fetching from json file
   // const searchBy = (data) => {
   //   return data.filter(
   //     (item) =>
