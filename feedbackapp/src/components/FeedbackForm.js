@@ -9,6 +9,8 @@ function FeedbackForm({ handleAdd, edit, currentFeedback, updatedFeedback }) {
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [message, setMessage] = useState("");
 
+
+  /** Validation of text input */
   const handleTextChange = (e) => {
     if (text === "") {
       setBtnDisabled(true);
