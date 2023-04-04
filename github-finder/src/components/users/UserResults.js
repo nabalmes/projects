@@ -17,9 +17,7 @@ function UserResults() {
 
     const data = await response.json();
     setUsers(data);
-    setTimeout(() => {
-        setIsLoading(false)
-    }, 5000);
+    setIsLoading(false);
   };
 
   if (!isLoading) {
@@ -30,10 +28,9 @@ function UserResults() {
         ))}
       </div>
     );
-  }else {
-    return <span className="loader"></span>
+  } else {
+    return <span className="loader"></span>;
   }
-  
 }
 
 export default UserResults;
