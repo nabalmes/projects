@@ -10,7 +10,7 @@ function About() {
       <p className="text-lg text-gray-400">
         Layout By:
         <a href="https://nab2023.vercel.app" className="text-white">
-          Neil Adrian Balmes
+          Neil Adrian Cueto Balmes
         </a>
       </p>
     </div>
