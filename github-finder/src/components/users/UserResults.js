@@ -9,14 +9,16 @@ function UserResults() {
   }, []);
 
   const request = async () => {
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/users`, {
+    const response = await fetch(`${process.env.
+      REACT_APP_API_URL}/users`, {
       headers: {
-        Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
+        Authorization: `token ${process.env.
+          REACT_APP_GITHUB_TOKEN}`,
       },
     });
 
     const data = await response.json();
-    console.log(data)
+    console.log(data);
     setUsers(data);
     setIsLoading(false);
   };
