@@ -9,13 +9,14 @@ function UserResults() {
   }, []);
 
   const request = async () => {
-    const response = await fetch(`${process.env.
-      REACT_APP_API_URL}/users`);
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/users`);
 
     const data = await response.json();
     console.log(data);
     setUsers(data);
-    setIsLoading(false);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
   };
 
   if (!isLoading) {
