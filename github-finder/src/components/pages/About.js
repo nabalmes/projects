@@ -7,7 +7,6 @@ function About() {
       <p className="mb-4 text-2xl font-light">
         A React app to search Github profiles and see profile details.
       </p>
-      <h1>{process.env.REACT_APP_API_URL}/user</h1>
       <p className="text-lg text-gray-400">
         Layout By:
         <a href="https://nab2023.vercel.app" className="text-white">
