@@ -28,7 +28,7 @@ function UserResults() {
       </div>
     );
   } else {
-    return <div className="loader-container">  <span className="loader"></span> </div>;
+    return <div className="loader-container"><span className="loader"></span></div>;
   }
 }
 
