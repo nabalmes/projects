@@ -13,11 +13,10 @@ function UserResults() {
     const response = await fetch(`${process.env.REACT_APP_API_URL}/users`);
 
     const data = await response.json();
-    console.log(data);
     setUsers(data);
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 3000);
   };
 
   if (!isLoading) {
