@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { Link } from "react-router-dom"
 function UserItem({user: {login, avatar_url}}) {
 
@@ -21,6 +22,9 @@ function UserItem({user: {login, avatar_url}}) {
         
         </div>
   )
-}
+
+  UserItem.propTypes = {
+    user: PropTypes.array,
+  }
 
 export default UserItem
