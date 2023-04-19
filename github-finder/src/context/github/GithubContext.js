@@ -10,7 +10,7 @@ export const GithubProvider = ({children}) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const request = async () => {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/users`);
+        const response = await fetch(`${process.env.GITHUB_URL}/users`);
     
         const data = await response.json();
         setUsers(data);
