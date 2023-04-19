@@ -18,4 +18,12 @@ export const GithubProvider = ({children}) => {
           setIsLoading(false);
         }, 3000);
       };
+
+      return <GithubContext.Provider value={({
+        users,
+        isLoading
+      })
+      }>
+        {children}
+      </GithubContext.Provider>
 }
