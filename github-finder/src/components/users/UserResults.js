@@ -4,7 +4,7 @@ import GithubContext from "../../context/github/GithubContext";
 
 function UserResults() {
 
-  const {users, isLoading, request} = useContext(GithubContext)
+  const { users, isLoading, request } = useContext(GithubContext)
   useEffect(() => {
     request();
   }, []);
