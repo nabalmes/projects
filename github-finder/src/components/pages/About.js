@@ -8,9 +8,9 @@ function About() {
         A React app to search Github profiles and see profile details.
       </p>
       <p className="text-lg text-gray-400">
-        Layout By:
+        CREATED BY:
         <a href="https://nab2023.vercel.app" className="text-white">
-          Neil Adrian Cueto Balmes
+            NEIL ADRIAN C BALMES
         </a>
       </p>
     </div>
