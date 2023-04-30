@@ -3,14 +3,16 @@ import React from "react";
 function About() {
   return (
     <div>
-      <h1 className="text-6xl mb-4">Github Finder</h1>
+      <h1 className="text-6xl mb-4">Github Checker!</h1>
       <p className="mb-4 text-2xl font-light">
-        A React app to search Github profiles and see profile details.
+        A React app to search
+        Github profiles and
+        see profile details.
       </p>
       <p className="text-lg text-gray-400">
         CREATED BY:
         <a href="https://nab2023.vercel.app" className="text-white">
-            NEIL ADRIAN C BALMES
+          NEIL ADRIAN C BALMES
         </a>
       </p>
     </div>
