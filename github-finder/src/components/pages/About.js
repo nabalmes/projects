@@ -12,7 +12,7 @@ function About() {
       <p className="text-lg text-gray-400">
         CREATED BY:
         <a href="https://nab2023.vercel.app" className="text-white">
-          NEIL ADRIAN C BALMES
+          NEIL ADRIAN C BALMES - Frontend Developer
         </a>
       </p>
     </div>
